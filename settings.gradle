@@ -1,0 +1,2 @@
+include ':app', ':uilibrary', ':demo2'
+project(':uilibrary').projectDir = new File('framework/uilibrary')

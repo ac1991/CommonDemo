@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.commondemo.xiaoyu.commondemo.MainActivity">
+
+
+
+            <com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu
+                android:id="@+id/test"
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:translationY="-300px"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toTopOf="parent"
+                ></com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu>
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#cccccc"
+                android:text="测试"
+                />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
