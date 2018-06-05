@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/blank_iv_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/bg_common_empty" />
+
+    <TextView
+        android:id="@+id/blank_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_30"
+        android:textColor="@color/color_c17"
+        android:textSize="16dp"
+        tools:text="title" />
+
+    <TextView
+        android:id="@+id/blank_tv_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/gap_14"
+        android:textColor="@color/color_c5"
+        android:textSize="@dimen/gap_14"
+        tools:text="detail" />
+
+    <qmui.widget.roundwidget.QMUIRoundButton
+        android:id="@+id/blank_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:paddingBottom="@dimen/gap_10"
+        android:paddingLeft="@dimen/f_16"
+        android:paddingRight="@dimen/f_16"
+        android:paddingTop="@dimen/gap_10"
+        android:text="刷新"
+        android:textColor="@color/color_c4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint"
+        app:qmui_borderColor="@color/color_line"
+        app:qmui_borderWidth="1px"
+        app:qmui_isRadiusAdjustBounds="false"
+        app:qmui_radius="@dimen/gap_4" />
+
+
+</LinearLayout>

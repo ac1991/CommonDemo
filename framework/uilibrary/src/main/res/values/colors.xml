@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_c0">#000000</color>
+    <color name="color_c1">#FFFFFF</color>
+    <color name="color_c2">#DCDCDC</color>
+    <color name="color_c3">#FF6F5C</color>
+    <color name="color_c4">#333333</color>
+    <color name="color_c5">#999999</color>
+    <color name="color_c6">#cccccc</color>
+    <color name="color_c7">#f7f7f7</color>
+    <color name="color_c8">#151515</color>
+    <color name="color_c9">#FFFCEF</color>
+    <color name="color_c10">#3F3F3F</color>
+    <color name="color_c11">#CCCCCC</color>
+    <color name="color_c12">#FF9183</color>
+    <color name="color_c13">#E6C459</color>
+    <color name="color_c14">#FAFAFB</color>
+    <color name="color_c15">#9ADFF8</color>
+    <color name="color_c16">#555555</color>
+    <color name="color_c18">#3D3D3D</color>
+
+    <color name="color_page_bg">#F7F7F7F7</color>
+    <color name="color_line">#DCDCDC</color>
+    <color name="color_mask">#8a000000</color>
+    <color name="color_c17">#686868</color>
+</resources>

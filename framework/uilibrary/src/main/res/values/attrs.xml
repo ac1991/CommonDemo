@@ -3,5 +3,12 @@
     <declare-styleable name="MultilevelLinkageMenu">
 
     </declare-styleable>
+
+    <declare-styleable name="BlankView">
+        <attr name="blank_icon" format="reference"/>
+        <attr name="blank_title" format="string|reference"/>
+        <attr name="blank_describe" format="string|reference"/>
+        <attr name="blank_button_text" format="string|reference"/>
+    </declare-styleable>
     
 </resources>
