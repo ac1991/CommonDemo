@@ -9,9 +9,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIResHelper;
+import qmui.util.QMUIViewHelper;
 
 
 /**

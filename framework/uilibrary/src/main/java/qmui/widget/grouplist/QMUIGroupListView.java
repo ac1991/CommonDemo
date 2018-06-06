@@ -10,9 +10,10 @@ import android.util.SparseArray;
 import android.view.View;
 import android.widget.LinearLayout;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIResHelper;
+import qmui.util.QMUIViewHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

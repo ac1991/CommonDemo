@@ -2,6 +2,7 @@ package qmui.widget;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.database.DataSetObserver;
@@ -26,13 +27,14 @@ import android.widget.HorizontalScrollView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIColorHelper;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUIDrawableHelper;
-import com.qmuiteam.qmui.util.QMUILangHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import  qmui.util.QMUIColorHelper;
+import  qmui.util.QMUIDisplayHelper;
+import  qmui.util.QMUIDrawableHelper;
+import  qmui.util.QMUILangHelper;
+import  qmui.util.QMUIResHelper;
+import  qmui.util.QMUIViewHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -1308,6 +1310,7 @@ public class QMUITabSegment extends HorizontalScrollView {
         }
     }
 
+    @SuppressLint("AppCompatCustomView")
     public class InnerTextView extends TextView {
 
         public InnerTextView(Context context) {

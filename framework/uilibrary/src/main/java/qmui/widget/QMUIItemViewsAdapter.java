@@ -4,7 +4,8 @@ import android.support.v4.util.Pools;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.qmuiteam.qmui.R;
+
+import com.commondemo.xiaoyu.uilibrary.R;
 
 import java.util.ArrayList;
 import java.util.List;

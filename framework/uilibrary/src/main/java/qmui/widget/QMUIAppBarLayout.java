@@ -8,7 +8,7 @@ import android.support.v4.view.WindowInsetsCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
+import qmui.util.QMUIWindowInsetHelper;
 
 import java.lang.reflect.Field;
 

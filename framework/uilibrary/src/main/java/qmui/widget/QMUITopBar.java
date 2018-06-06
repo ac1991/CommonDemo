@@ -18,13 +18,14 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.alpha.QMUIAlphaImageButton;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUIDrawableHelper;
-import com.qmuiteam.qmui.util.QMUILangHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import  qmui.alpha.QMUIAlphaImageButton;
+import  qmui.util.QMUIDisplayHelper;
+import  qmui.util.QMUIDrawableHelper;
+import  qmui.util.QMUILangHelper;
+import  qmui.util.QMUIResHelper;
+import  qmui.util.QMUIViewHelper;
 
 import java.util.ArrayList;
 import java.util.List;

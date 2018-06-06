@@ -4,8 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIViewHelper;
 
 /**
  * 使按钮能方便地指定圆角、边框颜色、边框粗细、背景色

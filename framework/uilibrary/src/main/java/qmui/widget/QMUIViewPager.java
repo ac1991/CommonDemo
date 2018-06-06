@@ -13,7 +13,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.qmuiteam.qmui.util.QMUIWindowInsetHelper;
+import qmui.util.QMUIWindowInsetHelper;
 
 /**
  * @author cginechen

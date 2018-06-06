@@ -4,8 +4,9 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.Button;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIViewHelper;
 
 /**
  * 使按钮能方便地指定圆角、边框颜色、边框粗细、背景色
@@ -17,7 +18,7 @@ import com.qmuiteam.qmui.util.QMUIViewHelper;
  * </ul>
  * </p>
  * <p>
- * 如需在 xml 中指定圆角、边框颜色、边框粗细、背景色等值,采用 xml 属性 {@link com.qmuiteam.qmui.R.styleable#QMUIRoundButton}
+ * 如需在 xml 中指定圆角、边框颜色、边框粗细、背景色等值,采用 xml 属性 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUIRoundButton}
  * </p>
  * <p>
  * 如需在 Java 中指定以上属性, 需要通过 {@link #getBackground()} 获取 {@link QMUIRoundButtonDrawable} 对象,

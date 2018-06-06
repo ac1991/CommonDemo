@@ -13,11 +13,12 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.alpha.QMUIAlphaImageButton;
-import com.qmuiteam.qmui.util.QMUIDrawableHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.alpha.QMUIAlphaImageButton;
+import  qmui.util.QMUIDrawableHelper;
+import   qmui.util.QMUIResHelper;
+import  qmui.util.QMUIViewHelper;
 
 /**
  * 这是一个对 {@link QMUITopBar} 的代理类，需要它的原因是：

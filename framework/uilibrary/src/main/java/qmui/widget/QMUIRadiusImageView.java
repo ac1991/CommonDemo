@@ -23,7 +23,8 @@ import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-import com.qmuiteam.qmui.R;
+import com.commondemo.xiaoyu.uilibrary.R;
+
 
 /**
  * 提供为图片添加圆角、边框、剪裁到圆形或其他形状等功能。

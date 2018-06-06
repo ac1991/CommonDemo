@@ -6,7 +6,7 @@ import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 
-import com.qmuiteam.qmui.widget.QMUIWrapContentListView;
+import qmui.widget.QMUIWrapContentListView;
 
 /**
  * 继承自 {@link QMUIPopup}，在 {@link QMUIPopup} 的基础上，支持显示一个列表。

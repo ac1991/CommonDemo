@@ -19,10 +19,11 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.link.QMUILinkTouchMovementMethod;
-import com.qmuiteam.qmui.link.QMUILinkify;
-import com.qmuiteam.qmui.span.QMUIOnSpanClickListener;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.link.QMUILinkTouchMovementMethod;
+import qmui.link.QMUILinkify;
+import qmui.span.QMUIOnSpanClickListener;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -32,7 +33,7 @@ import java.util.Set;
  * 相比于 {@link TextView} 使用 {@link android.text.util.Linkify},
  * {@link QMUILinkTextView} 有以下特点:
  * <ul>
- * <li>可以通过 {@link com.qmuiteam.qmui.R.styleable#QMUILinkTextView} 中的属性设置链接的样式</li>
+ * <li>可以通过 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUILinkTextView} 中的属性设置链接的样式</li>
  * <li>可以通过 {@link QMUILinkTextView#setOnLinkClickListener(QMUILinkTextView.OnLinkClickListener)} 设置链接的点击事件，
  * 而不是 {@link TextView} 默认的 {@link android.content.Intent} 跳转</li>
  * </ul>
@@ -40,7 +41,7 @@ import java.util.Set;
  * @author cginechen
  * @date 2017-03-17
  */
-public class QMUILinkTextView extends TextView implements QMUIOnSpanClickListener, ISpanTouchFix {
+public class QMUILinkTextView extends android.support.v7.widget.AppCompatTextView implements QMUIOnSpanClickListener, ISpanTouchFix {
     private static final String TAG = "LinkTextView";
     private static final int MSG_CHECK_DOUBLE_TAP_TIMEOUT = 1000;
     public static int AUTO_LINK_MASK_REQUIRED = QMUILinkify.PHONE_NUMBERS | QMUILinkify.EMAIL_ADDRESSES | QMUILinkify.WEB_URLS;

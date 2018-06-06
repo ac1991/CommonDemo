@@ -50,6 +50,8 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.FrameLayout;
 
+import com.commondemo.xiaoyu.uilibrary.R;
+
 import qmui.QMUIInterpolatorStaticHolder;
 import qmui.util.QMUICollapsingTextHelper;
 import qmui.util.QMUILangHelper;

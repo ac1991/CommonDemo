@@ -10,7 +10,8 @@ import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 
-import com.qmuiteam.qmui.R;
+import com.commondemo.xiaoyu.uilibrary.R;
+
 
 /**
  * 可以方便地生成圆角矩形/圆形 {@link android.graphics.drawable.Drawable}。

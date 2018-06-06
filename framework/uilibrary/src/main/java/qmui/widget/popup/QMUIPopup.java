@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import com.qmuiteam.qmui.R;
+import com.commondemo.xiaoyu.uilibrary.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

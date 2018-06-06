@@ -29,11 +29,13 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.QMUILog;
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUILangHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.QMUILog;
+
+import qmui.util.QMUIDisplayHelper;
+import qmui.util.QMUILangHelper;
+import qmui.util.QMUIResHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -6,23 +6,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.commondemo.xiaoyu.commondemo.MainActivity">
 
+    <Button
+        android:id="@+id/lifecycle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="生命周期测试"/>
 
-
-            <com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu
-                android:id="@+id/test"
-                android:layout_width="match_parent"
-                android:layout_height="300px"
-                android:translationY="-300px"
-                android:layout_marginTop="30dp"
-                app:layout_constraintTop_toTopOf="parent"
-                ></com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu>
-            <TextView
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="#cccccc"
-                android:text="测试"
-                />
+            <!--<com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu-->
+                <!--android:id="@+id/test"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="300px"-->
+                <!--android:translationY="-300px"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--&gt;</com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.MultilevelLinkageMenu>-->
+            <!--<TextView-->
+                <!--android:id="@+id/button2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="#cccccc"-->
+                <!--android:text="测试"-->
+                <!--/>-->
 
 
 

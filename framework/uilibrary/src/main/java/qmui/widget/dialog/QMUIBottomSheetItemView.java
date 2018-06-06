@@ -6,8 +6,9 @@ import android.util.AttributeSet;
 import android.view.ViewStub;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.alpha.QMUIAlphaLinearLayout;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.alpha.QMUIAlphaLinearLayout;
 
 /**
  * QMUIBottomSheet 的ItemView

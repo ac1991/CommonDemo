@@ -19,7 +19,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
 
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+import qmui.util.QMUIDisplayHelper;
 
 /**
  * 修改自 @author Lorensius W. L. T <lorenz@londatiga.net>

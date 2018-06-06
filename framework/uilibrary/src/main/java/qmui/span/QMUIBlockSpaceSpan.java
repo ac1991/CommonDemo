@@ -5,7 +5,7 @@ import android.graphics.Paint;
 import android.support.annotation.NonNull;
 import android.text.style.ReplacementSpan;
 
-import com.qmuiteam.qmui.util.QMUIDeviceHelper;
+import qmui.util.QMUIDeviceHelper;
 
 /**
  * 提供一个整行的空白的Span，可用来用于制作段间距

@@ -4,8 +4,8 @@ import android.graphics.drawable.Drawable;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 
-import com.qmuiteam.qmui.span.QMUIAlignMiddleImageSpan;
-import com.qmuiteam.qmui.span.QMUIMarginImageSpan;
+import qmui.span.QMUIAlignMiddleImageSpan;
+import qmui.span.QMUIMarginImageSpan;
 
 /**
  * @author cginechen

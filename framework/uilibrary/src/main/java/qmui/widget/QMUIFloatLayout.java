@@ -8,7 +8,8 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.qmuiteam.qmui.R;
+import com.commondemo.xiaoyu.uilibrary.R;
+
 
 /**
  * 该 layout 使子 View 类似 CSS 中的 float:left 效果, 从左到右排列子 View 并自动换行。支持以下特性：
@@ -17,7 +18,7 @@ import com.qmuiteam.qmui.R;
  * <li>使用 {@link #setGravity(int)} 控制子 View 的对齐方向 (左对齐/居中/右对齐)</li>
  * <li>使用 {@link #setMaxNumber(int)} 和 {@link #setMaxLines(int)} 控制子 View 的最多个数或最大行数</li>
  * </ul>
- * <p>在 xml 中采用 {@link com.qmuiteam.qmui.R.styleable#QMUIFloatLayout} 控制以上属性。</p>
+ * <p>在 xml 中采用 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUIFloatLayout} 控制以上属性。</p>
  */
 public class QMUIFloatLayout extends ViewGroup {
     private int mChildHorizontalSpacing;

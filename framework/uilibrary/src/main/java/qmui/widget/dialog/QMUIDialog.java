@@ -26,12 +26,13 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
-import com.qmuiteam.qmui.widget.QMUIWrapContentScrollView;
-import com.qmuiteam.qmui.widget.textview.QMUISpanTouchFixTextView;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIDisplayHelper;
+import qmui.util.QMUIResHelper;
+import qmui.util.QMUIViewHelper;
+import qmui.widget.QMUIWrapContentScrollView;
+import qmui.widget.textview.QMUISpanTouchFixTextView;
 
 import java.util.ArrayList;
 

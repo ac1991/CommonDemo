@@ -1,5 +1,6 @@
 package qmui.widget;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
@@ -7,14 +8,16 @@ import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIDisplayHelper;
 
 /**
  * 使 {@link TextView} 在宽度固定的情况下，文字多到一行放不下时能缩小文字大小来自适应
  *
  * http://stackoverflow.com/questions/2617266/how-to-adjust-text-font-size-to-fit-textview
  */
+@SuppressLint("AppCompatCustomView")
 public class QMUIFontFitTextView extends TextView {
 
     private Paint mTestPaint;

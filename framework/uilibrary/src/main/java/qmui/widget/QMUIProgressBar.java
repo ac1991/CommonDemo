@@ -12,8 +12,9 @@ import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import  qmui.util.QMUIDisplayHelper;
 
 /**
  * 一个进度条控件，通过颜色变化显示进度，支持环形和矩形两种形式，主要特性如下：

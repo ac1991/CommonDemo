@@ -7,8 +7,9 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUILangHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUILangHelper;
 
 
 /**

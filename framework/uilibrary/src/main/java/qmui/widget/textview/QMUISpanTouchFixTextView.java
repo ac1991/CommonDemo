@@ -1,5 +1,6 @@
 package qmui.widget.textview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.text.Spannable;
@@ -8,8 +9,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.link.QMUILinkTouchMovementMethod;
-import com.qmuiteam.qmui.span.QMUITouchableSpan;
+import qmui.link.QMUILinkTouchMovementMethod;
+import qmui.span.QMUITouchableSpan;
 
 /**
  * <p>
@@ -35,6 +36,7 @@ import com.qmuiteam.qmui.span.QMUITouchableSpan;
  * @see QMUITouchableSpan
  * @see QMUILinkTouchMovementMethod
  */
+@SuppressLint("AppCompatCustomView")
 public class QMUISpanTouchFixTextView extends TextView implements ISpanTouchFix {
     /**
      * 记录当前 Touch 事件对应的点是不是点在了 span 上面

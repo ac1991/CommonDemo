@@ -18,9 +18,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.widget.QMUILoadingView;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIDisplayHelper;
+import qmui.widget.QMUILoadingView;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

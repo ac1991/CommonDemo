@@ -11,8 +11,9 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIDisplayHelper;
 
 /**
  * 用于显示 Loading 的 {@link View}，支持颜色和大小的设置。

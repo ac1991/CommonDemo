@@ -19,11 +19,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUILangHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.util.QMUIDisplayHelper;
+import qmui.util.QMUILangHelper;
+import qmui.util.QMUIResHelper;
+import qmui.util.QMUIViewHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -33,10 +34,10 @@ import java.lang.annotation.RetentionPolicy;
  * 支持以下样式:
  * <ul>
  *     <li>通过 {@link #setText(SpannableString)} 设置一行文字</li>
- *     <li>通过 {@link #setDetailText(String)} 设置一行说明文字, 并通过 {@link #setOrientation(int)} 设置说明文字的位置,
- *     也可以在 xml 中使用 {@link com.qmuiteam.qmui.R.styleable#QMUICommonListItemView_qmui_orientation} 设置。</li>
+ *     <li>通过  设置一行说明文字, 并通过 {@link #setOrientation(int)} 设置说明文字的位置,
+ *     也可以在 xml 中使用 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUICommonListItemView_qmui_orientation} 设置。</li>
  *     <li>通过 {@link #setAccessoryType(int)} 设置右侧 View 的类型, 可选的类型见 {@link QMUICommonListItemAccessoryType},
- *     也可以在 xml 中使用 {@link com.qmuiteam.qmui.R.styleable#QMUICommonListItemView_qmui_accessory_type} 设置。</li>
+ *     也可以在 xml 中使用 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUICommonListItemView_qmui_accessory_type} 设置。</li>
  * </ul>
  *
  * @author chantchen

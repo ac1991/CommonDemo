@@ -16,6 +16,7 @@
 
 package qmui.util;
 
+import android.annotation.SuppressLint;
 import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -38,7 +39,7 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.qmuiteam.qmui.R;
+import com.commondemo.xiaoyu.uilibrary.R;
 
 public final class QMUICollapsingTextHelper {
 
@@ -161,7 +162,7 @@ public final class QMUICollapsingTextHelper {
         }
     }
 
-
+    @SuppressLint("RestrictedApi")
     public void setCollapsedTextAppearance(int resId) {
         TintTypedArray a = TintTypedArray.obtainStyledAttributes(mView.getContext(), resId, R.styleable.QMUITextAppearance);
         if (a.hasValue(R.styleable.QMUITextAppearance_android_textColor)) {
@@ -183,9 +184,9 @@ public final class QMUICollapsingTextHelper {
 
         recalculate();
     }
-
+    @SuppressLint("RestrictedApi")
     public void setExpandedTextAppearance(int resId) {
-        TintTypedArray a = TintTypedArray.obtainStyledAttributes(mView.getContext(), resId, R.styleable.QMUITextAppearance);
+         TintTypedArray a = TintTypedArray.obtainStyledAttributes(mView.getContext(), resId, R.styleable.QMUITextAppearance);
         if (a.hasValue(R.styleable.QMUITextAppearance_android_textColor)) {
             mExpandedTextColor = a.getColorStateList(R.styleable.QMUITextAppearance_android_textColor);
         }

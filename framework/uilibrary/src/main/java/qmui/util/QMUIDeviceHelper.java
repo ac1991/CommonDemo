@@ -10,7 +10,7 @@ import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.qmuiteam.qmui.QMUILog;
+import qmui.QMUILog;
 
 import java.io.File;
 import java.io.FileInputStream;

@@ -1,6 +1,6 @@
 package qmui.widget.pullRefreshLayout;
 
-import com.qmuiteam.qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout.RefreshOffsetCalculator;
+import qmui.widget.pullRefreshLayout.QMUIPullRefreshLayout.RefreshOffsetCalculator;
 
 /**
  * RefreshView 永远和 TargetView 保持一定的距离(这个距离由刷新时RefreshView居中算出)

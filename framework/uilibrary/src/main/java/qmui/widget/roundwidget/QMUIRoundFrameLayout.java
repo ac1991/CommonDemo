@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-import com.qmuiteam.qmui.util.QMUIViewHelper;
+import qmui.util.QMUIViewHelper;
 
 /**
  * 见 {@link QMUIRoundButton} 与 {@link QMUIRoundButtonDrawable}

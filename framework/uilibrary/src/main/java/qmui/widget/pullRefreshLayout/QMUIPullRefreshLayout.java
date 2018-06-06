@@ -22,17 +22,18 @@ import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.Scroller;
 
-import com.qmuiteam.qmui.R;
-import com.qmuiteam.qmui.drawable.QMUIMaterialProgressDrawable;
-import com.qmuiteam.qmui.util.QMUIDisplayHelper;
-import com.qmuiteam.qmui.util.QMUIResHelper;
+import com.commondemo.xiaoyu.uilibrary.R;
+
+import qmui.drawable.QMUIMaterialProgressDrawable;
+import qmui.util.QMUIDisplayHelper;
+import qmui.util.QMUIResHelper;
 
 /**
  * 下拉刷新控件, 作为容器，下拉时会将子 View 下移, 并拉出 RefreshView（表示正在刷新的 View）
  * <ul>
  * <li>可通过继承并覆写 {@link #createRefreshView()} 方法实现自己的 RefreshView</li>
  * <li>可通过 {@link #setRefreshOffsetCalculator(RefreshOffsetCalculator)} 自己决定在下拉过程中 RefreshView 的位置</li>
- * <li>可在 xml 中使用 {@link com.qmuiteam.qmui.R.styleable#QMUIPullRefreshLayout} 这些属性或在 Java 设置对应的属性决定子View的开始位置、触发刷新的位置等值</li>
+ * <li>可在 xml 中使用 {@link com.commondemo.xiaoyu.uilibrary.R.styleable#QMUIPullRefreshLayout} 这些属性或在 Java 设置对应的属性决定子View的开始位置、触发刷新的位置等值</li>
  * </ul>
  *
  * @author cginechen

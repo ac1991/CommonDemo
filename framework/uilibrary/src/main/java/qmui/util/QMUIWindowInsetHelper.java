@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.qmuiteam.qmui.widget.IWindowInsetLayout;
+import qmui.widget.IWindowInsetLayout;
 
 import java.lang.ref.WeakReference;
 
