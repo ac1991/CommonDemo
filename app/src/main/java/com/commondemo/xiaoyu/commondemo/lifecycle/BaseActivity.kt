@@ -32,6 +32,11 @@ open class BaseActivity: AppCompatActivity() {
         Logger.d(TAG, "onResume")
     }
 
+    override fun onAttachedToWindow() {
+        super.onAttachedToWindow()
+        Logger.d(TAG, "onAttachedToWindow")
+    }
+
     override fun onPause() {
         super.onPause()
         Logger.d(TAG, "onPause")

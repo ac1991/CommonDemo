@@ -1,0 +1,5 @@
+apply plugin:"java"
+
+task compileJavaDemo(type:JavaCompile){
+    
+}
