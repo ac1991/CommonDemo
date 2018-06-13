@@ -18,7 +18,9 @@
         </activity>
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".lifecycle.TwoActivity" />
-        <activity android:name=".lifecycle.OneActivity"></activity>
+        <activity android:name=".lifecycle.OneActivity" />
+        <activity android:name=".sufaceview.SufaceViewActivity" />
+        <activity android:name=".service.workmanager.WorkerActivity"></activity>
     </application>
 
 </manifest>

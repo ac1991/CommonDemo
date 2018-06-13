@@ -1,5 +1,9 @@
-apply plugin:"java"
-
+apply plugin:'java'
+def path = "./src/mian/java/com/commondemo/xiaoyu/commondemo/"
 task compileJavaDemo(type:JavaCompile){
-    
+
+    source = files(path + "thread")
+    include "WaitThread.java"
+    classpath = project.configurations.buildDependencies
+    destinationDir = file('./bin')
 }
