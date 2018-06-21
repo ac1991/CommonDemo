@@ -15,6 +15,8 @@ public class WaitThread {
 //        VisibleThread();
 
         runnableThread();
+
+//        waitThreadDemo();
     }
 
     /**
@@ -40,6 +42,29 @@ public class WaitThread {
         }
     }
 
+    private static void waitThreadDemo(){
+        final Object lock = new Object();
+        Thread threadA = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                Service.testMethod(lock);
+            }
+        };
+
+        Thread threadB = new Thread(){
+            @Override
+            public void run() {
+                super.run();
+                Service.synNotifyMethod(lock);
+            }
+        };
+
+        threadA.start();
+
+        threadB.start();
+    }
+
 }
 
 class AThread extends Thread{
@@ -57,7 +82,7 @@ class AThread extends Thread{
  * 测试runnable
  */
 class ARunnable implements Runnable {
-    private static volatile int index = 0;
+    private int index = 0;
     @Override
     public void run() {
         for (int i = 0; i< 10; i++){
@@ -69,7 +94,7 @@ class ARunnable implements Runnable {
 
 class Service {
 
-              public void testMethod(Object lock) {
+              public static void testMethod(Object lock) {
                  try {
                          synchronized (lock) {
                                 System.out.println("begin wait() ThreadName="
@@ -83,7 +108,7 @@ class Service {
                      }
              }
 
-             public void synNotifyMethod(Object lock) {
+             public static void synNotifyMethod(Object lock) {
                  try {
                          synchronized (lock) {
                                  System.out.println("begin notify() ThreadName="
@@ -100,3 +125,4 @@ class Service {
                      }
              }
  }
+
