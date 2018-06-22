@@ -6,6 +6,9 @@ import android.widget.Toast;
 
 import com.commondemo.xiaoyu.utils.Logger;
 
+import java.util.HashMap;
+
+import androidx.work.Data;
 import androidx.work.Worker;
 
 /**
@@ -17,6 +20,11 @@ public class WorkerDemo extends Worker{
     @Override
     public WorkerResult doWork() {
         Logger.INSTANCE.d(this.getClass().getName(), Thread.currentThread().getName() + ":doWork");
+
+        Data.Builder builder = new Data.Builder();
+        builder.putBoolean("k1", true);
+        builder.putString("k2", "吃饭");
+        setOutputData(builder.build());
         return WorkerResult.SUCCESS;
     }
 }

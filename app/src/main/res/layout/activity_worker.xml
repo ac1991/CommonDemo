@@ -14,7 +14,18 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="@dimen/gap_20"
         android:layout_marginLeft="@dimen/gap_20"
-        android:text="worker"
+        android:text="oneTime"
+        />
+
+    <Button
+        android:id="@+id/periodicWork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/worker"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/gap_20"
+        android:layout_marginLeft="@dimen/gap_20"
+        android:text="PeriodicWorkRequest"
         />
 
 </android.support.constraint.ConstraintLayout>

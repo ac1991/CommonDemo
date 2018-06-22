@@ -39,5 +39,11 @@ dependencies {
     implementation project(':utils')
 
     //支持workmanager
-    implementation "android.arch.work:work-firebase:$work_version"
+//    implementation "android.arch.work:work-firebase:$work_version"
+    implementation "android.arch.work:work-runtime:$work_version" // use -ktx for Kotlin
+
+    api 'com.squareup.retrofit2:retrofit:2.3.0'
+    api 'com.google.code.gson:gson:2.8.2'
+    api 'com.squareup.retrofit2:converter-gson:2.3.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
 }
