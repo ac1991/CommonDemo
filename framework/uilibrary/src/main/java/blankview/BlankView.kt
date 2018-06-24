@@ -93,7 +93,7 @@ class BlankView:LinearLayout {
     }
 
     fun setIcon(icon:Int){
-        var img: Drawable? = null
+        var img: Drawable?
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             img = (resources.getDrawable(icon, null))
         }else{

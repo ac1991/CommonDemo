@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.commondemo.xiaoyu.commondemo.lifecycle.OneActivity
+import com.commondemo.xiaoyu.commondemo.retrofit.RetrofitActivity
+import com.commondemo.xiaoyu.commondemo.service.workmanager.WorkerActivity
 import com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.OnLinkageItemClickListener
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -24,6 +26,14 @@ class MainActivity : AppCompatActivity() {
     fun initView(){
         lifecycle_button.setOnClickListener(){
             startActivity(Intent(this, OneActivity::class.java))
+        }
+
+        worker_button.setOnClickListener(){
+            startActivity(Intent(this, WorkerActivity::class.java))
+        }
+
+        retrofit_button.setOnClickListener(){
+            startActivity(Intent(this, RetrofitActivity::class.java))
         }
     }
 

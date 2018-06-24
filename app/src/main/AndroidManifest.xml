@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.commondemo.xiaoyu.commondemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +20,10 @@
         </activity>
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".lifecycle.TwoActivity" />
-        <activity android:name=".lifecycle.OneActivity"></activity>
+        <activity android:name=".lifecycle.OneActivity" />
+        <activity android:name=".sufaceview.SufaceViewActivity" />
+        <activity android:name=".service.workmanager.WorkerActivity" />
+        <activity android:name=".retrofit.RetrofitActivity"></activity>
     </application>
 
 </manifest>
