@@ -7,34 +7,35 @@ import android.util.Log
  */
 object Logger {
     var debug:Boolean = true
+    var TAG = "CommonDemo "
 
     fun d(tag:String, msg:String) {
         if (debug){
-            Log.d(tag, msg)
+            Log.d(TAG + tag, msg)
         }
     }
 
     fun i(tag:String, msg:String) {
         if (debug){
-            Log.i(tag, msg)
+            Log.i(TAG + tag, msg)
         }
     }
 
     fun e(tag:String, msg:String) {
         if (debug){
-            Log.e(tag, msg)
+            Log.e(TAG + tag, msg)
         }
     }
 
     fun w(tag:String, msg:String) {
         if (debug){
-            Log.w(tag, msg)
+            Log.w(TAG + tag, msg)
         }
     }
 
     fun v(tag:String, msg:String) {
         if (debug){
-            Log.v(tag, msg)
+            Log.v(TAG + tag, msg)
         }
     }
 }

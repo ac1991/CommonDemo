@@ -23,7 +23,11 @@
         <activity android:name=".lifecycle.OneActivity" />
         <activity android:name=".sufaceview.SufaceViewActivity" />
         <activity android:name=".service.workmanager.WorkerActivity" />
-        <activity android:name=".retrofit.RetrofitActivity"></activity>
+        <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".service.AIDL.ServiceActivity"></activity>
+
+        <service android:name=".service.AIDL.AIDLService"
+            android:process=":progress1"/>
     </application>
 
 </manifest>

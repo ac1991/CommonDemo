@@ -51,6 +51,7 @@ class WorkerActivity : AppCompatActivity() {
 
         WorkManager.getInstance().getStatusById(workerRequest.id).observe(this , Observer<WorkStatus> {
             workStatus->{
+            
             if (workStatus != null && workStatus.state.isFinished()) {
                 Logger.e(this::class.java.simpleName, workStatus.outputData.getString("k2","默认数据"));
             }

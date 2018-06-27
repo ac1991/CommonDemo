@@ -3,10 +3,13 @@ package com.commondemo.xiaoyu.commondemo
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Process
 import com.commondemo.xiaoyu.commondemo.lifecycle.OneActivity
 import com.commondemo.xiaoyu.commondemo.retrofit.RetrofitActivity
+import com.commondemo.xiaoyu.commondemo.service.AIDL.ServiceActivity
 import com.commondemo.xiaoyu.commondemo.service.workmanager.WorkerActivity
 import com.commondemo.xiaoyu.uilibrary.multilevellinkagemenu.OnLinkageItemClickListener
+import com.commondemo.xiaoyu.utils.Logger
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        Logger.i(TAG, "onCreate pid" + Process.myPid())
         initView()
 
     }
@@ -34,6 +37,10 @@ class MainActivity : AppCompatActivity() {
 
         retrofit_button.setOnClickListener(){
             startActivity(Intent(this, RetrofitActivity::class.java))
+        }
+
+        service_button.setOnClickListener(){
+            startActivity(Intent(this, ServiceActivity::class.java))
         }
     }
 
