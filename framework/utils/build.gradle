@@ -34,6 +34,54 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
-repositories {
-    mavenCentral()
+
+//Copy类型
+task makeJar(type: Copy) {
+    //删除存在的
+    delete 'build/libs/SkSDK.jar'
+    //设置拷贝的文件
+    from('build/intermediates/bundles/release/')
+    //打进jar包后的文件目录
+    into('build/libs/')
+    //将classes.jar放入build/libs/目录下
+    //include ,exclude参数来设置过滤
+    //（我们只关心classes.jar这个文件）
+    include('classes.jar')
+
+    //过滤不需要的class
+    exclude "com/commondemo/xiaoyu/utils/BuildConfig.class"
+    exclude "**/**/BuildConfig\$*.class"
+    exclude "**/R.class"
+    exclude "**/R\$*.class"
+
+    //指定打包的class
+    include "com/**/*.class"
+
+    //重命名
+    rename ('classes.jar', 'SkSDK.jar')
 }
+makeJar.dependsOn(build)
+//在终端执行生成JAR包
+
+//task clearJar(type: Delete) {
+//    delete 'build/libs/TestSDK.jar'
+////    delete 'libs/TestSDK.jar'
+//}
+////打包任务
+//task makeJar(type: Jar) {
+//    //指定生成的jar名
+//    baseName 'TestSDK'
+//    //从哪里打包class文件
+//    from('build/intermediates/classes/release/com/commondemo/xiaoyu/utils/')
+//    //打包到jar后的目录结构
+//    into('com/commondemo/xiaoyu/utils/')
+//    //去掉不需要打包的目录和文件
+//    exclude('BuildConfig.class', 'R.class')
+//    //去掉R$开头的文件
+//    exclude { it.name.startsWith('R$'); }
+//}
+//makeJar.dependsOn(clearJar, build)
+//
+//repositories {
+//    mavenCentral()
+//}

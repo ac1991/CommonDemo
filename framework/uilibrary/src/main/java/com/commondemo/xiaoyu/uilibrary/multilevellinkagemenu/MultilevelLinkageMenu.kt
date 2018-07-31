@@ -39,7 +39,7 @@ class MultilevelLinkageMenu : LinearLayout, OnLinkageItemClickListener {
         Log.d("MultilevelLinkageMenu","onLayout")
     }
 
-    fun addList(list: MutableList<String>){
+    fun addList(list: MutableList<String>?){
         Log.d("MultilevelLinkageMenu","addList")
         if (list != null && list.size > 0){
             isConfig = false
