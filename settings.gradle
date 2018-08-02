@@ -1,3 +1,3 @@
-include ':app', ':uilibrary', ':demo2', ':utils'
+include ':app', ':uilibrary', ':demo2', ':utils', ':tinkerdemo', ':mapdemo'
 project(':uilibrary').projectDir = new File('framework/uilibrary')
 project(':utils').projectDir = new File('framework/utils')

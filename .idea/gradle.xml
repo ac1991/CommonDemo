@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/demo2" />
             <option value="$PROJECT_DIR$/framework/uilibrary" />
             <option value="$PROJECT_DIR$/framework/utils" />
+            <option value="$PROJECT_DIR$/mapdemo" />
+            <option value="$PROJECT_DIR$/tinkerdemo" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

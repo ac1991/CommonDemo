@@ -24,10 +24,13 @@
         <activity android:name=".sufaceview.SufaceViewActivity" />
         <activity android:name=".service.workmanager.WorkerActivity" />
         <activity android:name=".retrofit.RetrofitActivity" />
-        <activity android:name=".service.AIDL.ServiceActivity"></activity>
+        <activity android:name=".service.AIDL.ServiceActivity" />
 
-        <service android:name=".service.AIDL.AIDLService"
-            android:process=":progress1"/>
+        <service
+            android:name=".service.AIDL.AIDLService"
+            android:process=":progress1" />
+
+        <activity android:name=".room.RoomActivity"></activity>
     </application>
 
 </manifest>
