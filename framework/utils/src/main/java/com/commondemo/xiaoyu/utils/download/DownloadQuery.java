@@ -2,6 +2,7 @@ package com.commondemo.xiaoyu.utils.download;
 
 import android.app.DownloadManager;
 import android.content.Context;
+import android.database.Cursor;
 
 /**
  * Created by Xiaoyu on 2018/8/2.
@@ -20,6 +21,16 @@ public class DownloadQuery {
 
         // 还可以根据状态过滤结果
          query.setFilterByStatus(DownloadManager.STATUS_SUCCESSFUL);
+
+         Cursor cursor = manager.query(query);
+
+         if (cursor.moveToFirst()){
+//            cursor.close();
+
+            return null;
+         }
+
+
 
         return null;
     }

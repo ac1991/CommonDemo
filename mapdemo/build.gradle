@@ -48,5 +48,4 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(':uilibrary')
-    implementation files('libs/Android_Map3D_SDK_V6.3.1_20180726.jar')
 }

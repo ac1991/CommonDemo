@@ -3,22 +3,32 @@ package com.commondemo.xiaoyu.mapdemo
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
+import android.location.Geocoder
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.amap.api.maps.AMap
-import com.amap.api.maps.model.BitmapDescriptorFactory
-import com.amap.api.maps.model.LatLng
-import com.amap.api.maps.model.Marker
-import com.amap.api.maps.model.MarkerOptions
+import com.amap.api.maps.model.*
+import com.amap.api.services.core.AMapException
+import com.amap.api.services.geocoder.GeocodeQuery
+import com.amap.api.services.geocoder.GeocodeResult
+import com.amap.api.services.geocoder.GeocodeSearch
+import com.amap.api.services.geocoder.RegeocodeResult
 import kotlinx.android.synthetic.main.activity_marker.*
+import kotlinx.android.synthetic.main.marker_view_layout.*
 import mapmarker.MarkerCircleView
+import java.util.logging.Logger
 
 class MarkerActivity : AppCompatActivity() , AMap.OnMarkerClickListener,
         AMap.OnInfoWindowClickListener, AMap.OnMarkerDragListener, AMap.OnMapLoadedListener,
         View.OnClickListener {
+
+    val addrs = arrayOf("金杨二街坊", "钦州北路1122号", "漕河泾地铁站")
+    var geocoderSearch:GeocodeSearch? = null
+
     override fun onMarkerClick(p0: Marker?): Boolean {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -71,8 +81,11 @@ class MarkerActivity : AppCompatActivity() , AMap.OnMarkerClickListener,
 
     override fun onAttachedToWindow() {
         super.onAttachedToWindow()
-
-        initMarkerView()
+        initAMap()
+        initLocation()
+        initGeocodeSearch()
+        drawMarkers()
+//        initMarkerView()
     }
 
     override fun onPause() {
@@ -90,15 +103,76 @@ class MarkerActivity : AppCompatActivity() , AMap.OnMarkerClickListener,
         map.onDestroy()
     }
 
-    private fun initMarkerView(){
-        if (aMap == null){
+    private fun initAMap(){
+        if(aMap == null){
             aMap = map.map
+        }
+    }
+
+    private fun initLocation(){
+        if (aMap != null) {
+            val myLocationStyle = MyLocationStyle()
+            myLocationStyle.myLocationType(MyLocationStyle.LOCATION_TYPE_LOCATE)//只定位一次并且视图移动到中心点
+            myLocationStyle.showMyLocation(true)
+            myLocationStyle.strokeColor(Color.TRANSPARENT);// 设置圆形的边框颜色
+            myLocationStyle.radiusFillColor(Color.argb(0, 0, 0, 0));// 设置圆形的填充颜色
+
+            aMap!!.myLocationStyle = myLocationStyle
+            aMap!!.setMyLocationEnabled(true)
+        }
+    }
+
+    private fun drawMarkers(){
+        for (address in addrs){
+            geocode(address)
+        }
+    }
+
+    private fun initGeocodeSearch(){
+        if (aMap != null){
+            initAMap()
+            geocoderSearch = GeocodeSearch(this)
+            geocoderSearch!!.setOnGeocodeSearchListener(object :GeocodeSearch.OnGeocodeSearchListener{
+                //逆地理编码
+                override fun onRegeocodeSearched(p0: RegeocodeResult?, p1: Int) {
+
+                }
+
+                //地理编码
+                override fun onGeocodeSearched(result: GeocodeResult?, code: Int) {
+                    if (code == AMapException.CODE_AMAP_SUCCESS){
+                        if (result != null && result.geocodeAddressList != null && result.geocodeAddressList.size > 0){
+
+                            val address = result.geocodeAddressList[0]
+                            if (address != null){
+                                initMarkerView(LatLng(address.latLonPoint.latitude, address.latLonPoint.longitude), result.geocodeQuery.locationName)
+                                Log.d("地址",  address.formatAddress + "  district" + address.district + " province" + address.province + " adcode" + address.adcode + " township" + address.township + " level" + address.level + " city" + address.city)
+                                Log.d("地址", result.geocodeQuery.locationName)
+                            }
+                        }
+                    }
+                }
+
+            })
+
+        }
+    }
+
+    private fun geocode(addr:String){
+        val query = GeocodeQuery(addr, "上海")
+        if (geocoderSearch != null) {
+            geocoderSearch!!.getFromLocationNameAsyn(query)
+        }
+    }
+
+    private fun initMarkerView(position:LatLng, addr:String){
+        if (aMap != null){
+
             val option:MarkerOptions = MarkerOptions()
 
-            option.position(LatLng(31.178937, 121.40333))
-
+            option.position(position)
             val view = MarkerCircleView(this)
-            view.setAddr("吃鸡")
+            view.setAddr(addr)
             option.icon(BitmapDescriptorFactory.fromView(view)).draggable(true)//.title("吃鸡鸡").snippet("papapa")
             val marker = aMap!!.addMarker(option)
             marker.showInfoWindow()
